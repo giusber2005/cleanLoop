@@ -7,21 +7,7 @@ import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
 
 export default async function Home() {
-  const { stargazers_count: stars } = await fetch(
-    "https://github.com/giusber2005/project-name",
-    {
-      ...(process.env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-      // data will revalidate every 24 hours
-      next: { revalidate: 86400 },
-    },
-  )
-    .then((res) => res.json())
-    .catch((e) => console.log(e));
+  const stars = 0;
 
   return (
     <>

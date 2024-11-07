@@ -67,3 +67,23 @@ export const truncate = (str: string, length: number) => {
   if (!str || str.length <= length) return str;
   return `${str.slice(0, length)}...`;
 };
+
+export const getGithubStars = async () => {
+  const { stargazers_count: stars } = await fetch(
+    "https://github.com/giusber2005/project-name",
+    {
+      ...(process.env.GITHUB_OAUTH_TOKEN && {
+        headers: {
+          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+      }),
+      // data will revalidate every 24 hours
+      next: { revalidate: 86400 },
+    },
+  )
+    .then((res) => res.json())
+    .catch((e) => console.log(e));
+
+  return stars;
+};
