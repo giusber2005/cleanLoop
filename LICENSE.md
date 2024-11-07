@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Steven Tey
+Copyright (c) 2024 [Giuseppe Berardi, Member 2, Member 3, Member 4, Member 5 /Project-name]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
