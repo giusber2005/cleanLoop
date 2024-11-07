@@ -29,26 +29,46 @@ export default function NavBar() {
             ></Image>
             <p>Project Name</p>
           </Link>
-          <SignedOut>
-            <SignInButton mode="modal">
-              <button className="rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-colors hover:bg-white hover:text-black">
-                Sign In
-              </button>
-            </SignInButton>
-          </SignedOut>
-          <SignedIn>
-            <UserButton>
-              <UserButton.MenuItems>
-                <UserButton.Link
-                  label="Dashboard"
-                  labelIcon={<LayoutDashboard className="h-4 w-4" />}
-                  href="/"
-                />
-              </UserButton.MenuItems>
-            </UserButton>
-          </SignedIn>
+          
+          {/* New navigation buttons */}
+          <div className="hidden space-x-4 sm:flex">
+            <NavButton href="/feature-0">Feature 0</NavButton>
+            <NavButton href="/feature-1">Feature 1</NavButton>
+            <NavButton href="/feature-2">Feature 2</NavButton>
+            <NavButton href="/feature-3">Feature 3</NavButton>
+          </div>
+
+          <div className="flex items-center space-x-4">
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button className="rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black">
+                  Sign In
+                </button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <UserButton>
+                <UserButton.MenuItems>
+                  <UserButton.Link
+                    label="Dashboard"
+                    labelIcon={<LayoutDashboard className="h-4 w-4" />}
+                    href="/"
+                  />
+                </UserButton.MenuItems>
+              </UserButton>
+            </SignedIn>
+          </div>
         </div>
       </div>
     </>
+  );
+}
+
+function NavButton({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link href={href} className="group relative px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-black">
+      {children}
+      <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 transition-transform group-hover:scale-x-100" />
+    </Link>
   );
 }
