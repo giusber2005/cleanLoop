@@ -7,15 +7,51 @@ export default function Footer() {
         A project by{" "}
         <a
           className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
+          href="https://github.com/giusber2005"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Giuseppe Berardi
+        </a>
+        {", "}
+        <a
+          className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
           href="https://twitter.com/steventey"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Steven Tey
+          Member 2
+        </a>
+        {", "}
+        <a
+          className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
+          href="https://twitter.com/steventey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Member 3
+        </a>
+        {", "}
+        <a
+          className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
+          href="https://twitter.com/steventey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Member 4
+        </a>
+        {", "}
+        <a
+          className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
+          href="https://twitter.com/steventey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Member 5
         </a>
       </p>
       <a
-        href="https://www.buymeacoffee.com/steventey"
+        href="https://buymeacoffee.com/giusber200i"
         target="_blank"
         rel="noopener noreferrer"
         className="mx-auto mt-2 flex max-w-fit items-center justify-center space-x-2 rounded-lg border border-gray-200 bg-white px-6 py-2 transition-all duration-75 hover:scale-105"
