@@ -8,7 +8,7 @@ import { nFormatter } from "@/lib/utils";
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/steven-tey/precedent",
+    "https://github.com/giusber2005/project-name",
     {
       ...(process.env.GITHUB_OAUTH_TOKEN && {
         headers: {
