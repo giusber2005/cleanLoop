@@ -81,13 +81,7 @@ export default async function Home() {
             key={title}
             title={title}
             description={description}
-            demo={
-              title === "Beautiful, reusable components" ? (
-                <ComponentGrid />
-              ) : (
-                demo
-              )
-            }
+            demo={demo}
             large={large}
           />
         ))}
@@ -98,9 +92,9 @@ export default async function Home() {
 
 const features = [
   {
-    title: "Beautiful, reusable components",
-    description:
-      "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com), [Radix UI](https://www.radix-ui.com), and [Framer Motion](https://framer.com/motion). Used in production on [Dub.co](https://dub.co).",
+    title: "FEATURE 0",
+    description: "Description of the feature",
+    demo: <div>Demo 0</div>,
     large: true,
   },
   {
@@ -110,44 +104,18 @@ const features = [
     demo: <WebVitals />,
   },
   {
-    title: "One-click Deploy",
-    description:
-      "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
-    demo: (
-      <a href={DEPLOY_URL}>
-        <Image
-          src="https://vercel.com/button"
-          alt="Deploy with Vercel"
-          width={120}
-          height={30}
-          unoptimized
-        />
-      </a>
-    ),
+    title: "FEATURE 1",
+    description: "Description of the feature",
+    demo: <div>Demo 1</div>,
   },
   {
-    title: "Built-in Auth",
-    description:
-      "Precedent comes with authentication via [Clerk](https://clerk.com/)",
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image alt="Clerk logo" src="/clerk.svg" width={50} height={50} />
-      </div>
-    ),
+    title: "FEATURE 2",
+    description: "Description of the feature",
+    demo: <div>Demo 2</div>,
   },
   {
-    title: "Hooks, utilities, and more",
-    description:
-      "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
-    demo: (
-      <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
-        <span className="font-mono font-semibold">useIntersectionObserver</span>
-        <span className="font-mono font-semibold">useLocalStorage</span>
-        <span className="font-mono font-semibold">useScroll</span>
-        <span className="font-mono font-semibold">nFormatter</span>
-        <span className="font-mono font-semibold">capitalize</span>
-        <span className="font-mono font-semibold">truncate</span>
-      </div>
-    ),
+    title: "FEATURE 3",
+    description: "Description of the feature",
+    demo: <div>Demo 3</div>,
   },
 ];
