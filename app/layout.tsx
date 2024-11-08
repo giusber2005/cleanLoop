@@ -1,10 +1,10 @@
 import "./globals.css";
 import cx from "classnames";
 import { sfPro, inter } from "./fonts";
-import Footer from "@/components/layout/footer";
+import Footer from "@/app/components/layout/footer";
 import { Suspense } from "react";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/app/components/layout/navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata = {

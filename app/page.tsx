@@ -1,10 +1,10 @@
-import Card from "@/components/home/card";
-import { DEPLOY_URL } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
-import ComponentGrid from "@/components/home/component-grid";
+import Card from "@/app/components/home/card";
+import { DEPLOY_URL } from "@/app/utils/lib/constants";
+import { Github, Twitter } from "@/app/components/shared/icons";
+import WebVitals from "@/app/components/home/web-vitals";
+import ComponentGrid from "@/app/components/home/component-grid";
 import Image from "next/image";
-import { nFormatter } from "@/lib/utils";
+import { nFormatter } from "@/app/utils/lib/utils";
 
 export default async function Home() {
   const stars = 0;
