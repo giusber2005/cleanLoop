@@ -54,7 +54,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-6 xl:px-0">
-        {features.map(({ title, description, demo, large, imagePosition }, index) => (
+        {features.map(({ title, description, demo, large, imagePosition, imageSrc }, index) => (
           <Card
             key={title}
             title={title}
@@ -67,6 +67,7 @@ export default async function Home() {
                 ? "md:col-span-2 md:col-start-2 last:md:col-start-4" 
                 : "md:col-span-3"
             }`}
+            imageSrc={imageSrc}
           />
         ))}
       </div>
@@ -81,6 +82,7 @@ const features = [
     demo: <div>Demo 0</div>,
     large: true,
     imagePosition: "left",
+    imageSrc: "/cleaner1.png",
   },
   {
     title: "Performance first",
@@ -94,11 +96,13 @@ const features = [
     description: "Make your neighborhood clean again",
     demo: <div>Demo 1</div>,
     imagePosition: "left",
+    imageSrc: "/cleaner2.png",
   },
   {
-    title: "Report a recycling",
+    title: "Report a cleaning",
     description: "Show others your work",
     demo: <div>Demo 2</div>,
     imagePosition: "right",
+    imageSrc: "/cleaner3.png",
   },  
 ];

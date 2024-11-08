@@ -32,10 +32,8 @@ export default function NavBar() {
           
           {/* New navigation buttons */}
           <div className="hidden space-x-4 sm:flex">
-            <NavButton href="/feature-0">Feature 0</NavButton>
-            <NavButton href="/feature-1">Feature 1</NavButton>
-            <NavButton href="/feature-2">Feature 2</NavButton>
-            <NavButton href="/feature-3">Feature 3</NavButton>
+            <NavButton href="/features/yourArea">Your area</NavButton>
+            <NavButton href="/features/bootcamps">Bootcamps</NavButton>
           </div>
 
           <div className="flex items-center space-x-4">
