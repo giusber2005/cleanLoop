@@ -1,5 +1,5 @@
 <a href="https://precedent.dev">
-  <img alt="Team project logo" src="https://precedent.dev/opengraph-image" />
+  <img alt="Team project logo" src="app/public/logoXL.png" />
   <h1 align="center">cleanLoop</h1>
 </a>
 
