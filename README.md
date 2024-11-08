@@ -20,7 +20,6 @@ Simple description of our project, with also the description of the technical in
 ## Authors
 
 - Giuseppe Berardi ([@giusber2005](https://github.com/giusber2005))
-- Member 2
-- Member 3
-- Member 4
-- Member 5
+- Tara Fardmanesh ([@tarafard](https://github.com/tarafard))
+- Pouya Sattari ([@pouyasattari](https://github.com/pouyasattari))
+

@@ -76,13 +76,14 @@ export default async function Home() {
         </div>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo, large }) => (
+        {features.map(({ title, description, demo, large, imagePosition}) => (
           <Card
             key={title}
             title={title}
             description={description}
             demo={demo}
             large={large}
+            imagePosition={imagePosition}
           />
         ))}
       </div>
@@ -96,26 +97,31 @@ const features = [
     description: "Description of the feature",
     demo: <div>Demo 0</div>,
     large: true,
+    imagePosition: "left",
   },
   {
     title: "Performance first",
     description:
       "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
     demo: <WebVitals />,
+    imagePosition: "right",
   },
   {
     title: "FEATURE 1",
     description: "Description of the feature",
     demo: <div>Demo 1</div>,
+    imagePosition: "left",
   },
   {
     title: "FEATURE 2",
     description: "Description of the feature",
     demo: <div>Demo 2</div>,
-  },
+    imagePosition: "right",
+  },  
   {
     title: "FEATURE 3",
     description: "Description of the feature",
     demo: <div>Demo 3</div>,
+    imagePosition: "left",
   },
 ];

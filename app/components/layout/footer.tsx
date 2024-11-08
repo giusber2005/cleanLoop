@@ -16,38 +16,20 @@ export default function Footer() {
         {", "}
         <a
           className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
-          href="https://twitter.com/steventey"
+          href="https://github.com/pouyasattari"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Member 2
+          Pouya Sattari
         </a>
         {", "}
         <a
           className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
-          href="https://twitter.com/steventey"
+          href="https://github.com/tarafard"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Member 3
-        </a>
-        {", "}
-        <a
-          className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
-          href="https://twitter.com/steventey"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Member 4
-        </a>
-        {", "}
-        <a
-          className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
-          href="https://twitter.com/steventey"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Member 5
+          Tara Fardmanesh
         </a>
       </p>
       <a
