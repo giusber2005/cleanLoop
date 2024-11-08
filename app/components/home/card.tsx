@@ -2,24 +2,28 @@ import { ReactNode } from "react"
 import ReactMarkdown from "react-markdown"
 import Image from "next/image"
 
+interface CardProps {
+  title: string;
+  description: string;
+  demo: React.ReactNode;
+  large?: boolean;
+  imagePosition?: string;
+  className?: string;
+}
+
 export default function Card({
   title,
   description,
   demo,
   large,
   imagePosition = "left",
-}: {
-  title: string
-  description: string
-  demo: ReactNode
-  large?: boolean
-  imagePosition?: string
-}) {
+  className = "",
+}: CardProps) {
   return (
     <div
       className={`relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 ${
         large ? "md:col-span-2" : ""
-      }`}
+      } ${className}`}
     >
       <div className="flex h-60 items-center justify-center">
         {imagePosition === "left" && <ImagePlaceholder />}

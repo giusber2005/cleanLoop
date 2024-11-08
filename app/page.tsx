@@ -53,8 +53,8 @@ export default async function Home() {
           </a>
         </div>
       </div>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo, large, imagePosition}) => (
+      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-6 xl:px-0">
+        {features.map(({ title, description, demo, large, imagePosition }, index) => (
           <Card
             key={title}
             title={title}
@@ -62,6 +62,11 @@ export default async function Home() {
             demo={demo}
             large={large}
             imagePosition={imagePosition}
+            className={`${
+              index >= features.length - 2 
+                ? "md:col-span-2 md:col-start-2 last:md:col-start-4" 
+                : "md:col-span-3"
+            }`}
           />
         ))}
       </div>
