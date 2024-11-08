@@ -27,7 +27,7 @@ export default function NavBar() {
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>Project Name</p>
+            <p>cleanLoop</p>
           </Link>
           
           {/* New navigation buttons */}

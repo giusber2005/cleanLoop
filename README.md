@@ -1,10 +1,10 @@
 <a href="https://precedent.dev">
   <img alt="Team project logo" src="https://precedent.dev/opengraph-image" />
-  <h1 align="center">Team Project Name</h1>
+  <h1 align="center">cleanLoop</h1>
 </a>
 
 <p align="center">
-  Description of the project in a few words
+  Be part of the solution, not the pollution
 </p>
 
 <p align="center">
@@ -13,9 +13,12 @@
 </p>
 <br/>
 
-## Introduction
+## Description
 
-Simple description of our project, with also the description of the technical informations
+cleanLoop is a game that allows you to play, pick up and win.
+We want to change the way people think about waste and recycling.
+Be the person that makes a difference.
+Make your neighborhood clean again.
 
 ## Authors
 
