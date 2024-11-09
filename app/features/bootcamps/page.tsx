@@ -34,32 +34,32 @@ export default function partnersPage() {
 
 const features = [
     {
-      title: "Paulaner Stuben Pizza voucher",
+      title: "Cleaning group center area",
       description: "Get a voucher for a discount pizza at Paulaner Stuben, go to clean the streets of this area",
-      demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
-      </Button>,
+      demo: <Button variant="default">
+        <Plus className="mr-2 h-4 w-4" /> Join a group
+    </Button>, 
       imagePosition: "left",
       large: true,
       small: false,
       imageSrc: "/pizzeria.jpg",
     },
     {
-      title: "Centrum rewards vouchers",
+      title: "Cleaning group NOI tech park area",
       description: "Make this area greener and gain rewards, see possibilities in the Centrum area",
-      demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
-      </Button>,
+      demo: <Button variant="default">
+        <Plus className="mr-2 h-4 w-4" /> Join a group
+    </Button>,
       large: true,
       small: false,
       imagePosition: "right", 
       imageSrc: "/centrum.jpg",
     },
     {
-      title: "Oberalp free trial",
+      title: "Cleaning group Gebert-Deeg area",
       description: "Get a free trial of Oberalp, the best climbing gym in Bolzano, go and clean with your friends",
-        demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
+        demo: <Button variant="default">
+        <Plus className="mr-2 h-4 w-4" /> Join a group
       </Button>,
       imagePosition: "left",
       large: true,
@@ -67,33 +67,33 @@ const features = [
       imageSrc: "/climber.png",
     },
     {
-      title: "Sportler Card",
+      title: "Cleaning group San Maurizio area",
       description: "Clean the center, get a Sportler Card for sales in their shops",
-      demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
-      </Button>,
+      demo: <Button variant="default">
+      <Plus className="mr-2 h-4 w-4" /> Join a group
+    </Button>,
       imagePosition: "right",
       large: true,
       small: false,
       imageSrc: "/sportShop.png",
     },
     {
-        title: "Panificio Lemayr",
+        title: "Cleaning group bakery area",
         description: "Make this area greener and get a discount of 10% on your next purchase at Panificio Lemayr",
-        demo: <Button variant="secondary">
-          <Download className="mr-2 h-4 w-4" /> Create a team
-        </Button>,
+        demo: <Button variant="default">
+        <Plus className="mr-2 h-4 w-4" /> Join a group
+      </Button>,
         imagePosition: "left",
         large: true,
         small: false,
         imageSrc: "/panetteria.jpg",
       },
       {
-        title: "Decathlon",
+        title: "Cleaning group Virgolo area",
         description: "Clean the center, get a discount of 20% on your next purchase at Decathlon",
-        demo: <Button variant="secondary">
-          <Download className="mr-2 h-4 w-4" /> Create a team
-        </Button>,
+        demo: <Button variant="default">
+        <Plus className="mr-2 h-4 w-4" /> Join a group
+      </Button>,
         imagePosition: "right",
         large: true,
         small: false,
