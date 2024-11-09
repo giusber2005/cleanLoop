@@ -6,7 +6,6 @@ import Card from '@/components/home/card'
 import { Button } from '@/components/home/modernButton'
 import { Send } from 'lucide-react'
 import Image from 'next/image';
-import OpenMap from '../../components/home/map/map'
 
 export default function MapPage() {
 const [selectedPlace, setSelectedPlace] = useState(null)
@@ -28,7 +27,7 @@ const [selectedPlace, setSelectedPlace] = useState(null)
 
       <div className="flex flex-col md:flex-row gap-4 h-[calc(100vh-120px)] mb-20">
         <div className="w-full md:w-1/2 h-full scale-90">
-           <OpenMap />
+           <Map places={places} />
         </div>
         <div className="w-full md:w-1/2 h-full">
             <div className="grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-6 xl:px-0">

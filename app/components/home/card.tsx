@@ -83,7 +83,6 @@ function ImagePlaceholder({ src, small }: { src: string; small?: boolean }) {
         className="object-contain w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
         style={{ objectPosition: 'center' }}
       />
-      <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-20"></div>
     </div>
   )
 }

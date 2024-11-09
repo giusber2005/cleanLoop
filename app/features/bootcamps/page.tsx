@@ -42,7 +42,7 @@ const features = [
       imagePosition: "left",
       large: true,
       small: false,
-      imageSrc: "/pizzeria.jpg",
+      imageSrc: "/group1.jpg",
     },
     {
       title: "Cleaning group NOI tech park area",
@@ -53,7 +53,7 @@ const features = [
       large: true,
       small: false,
       imagePosition: "right", 
-      imageSrc: "/centrum.jpg",
+      imageSrc: "/group2.jpg",
     },
     {
       title: "Cleaning group Gebert-Deeg area",
@@ -64,7 +64,7 @@ const features = [
       imagePosition: "left",
       large: true,
       small: false,
-      imageSrc: "/climber.png",
+      imageSrc: "/group3.jpg",
     },
     {
       title: "Cleaning group San Maurizio area",
@@ -75,7 +75,7 @@ const features = [
       imagePosition: "right",
       large: true,
       small: false,
-      imageSrc: "/sportShop.png",
+      imageSrc: "/group4.jpg",
     },
     {
         title: "Cleaning group bakery area",
@@ -86,7 +86,7 @@ const features = [
         imagePosition: "left",
         large: true,
         small: false,
-        imageSrc: "/panetteria.jpg",
+        imageSrc: "/group5.jpg",
       },
       {
         title: "Cleaning group Virgolo area",
@@ -97,7 +97,7 @@ const features = [
         imagePosition: "right",
         large: true,
         small: false,
-        imageSrc: "/decathlon.png",
+        imageSrc: "/group6.jpg",
       },  
 
 

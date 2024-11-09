@@ -20,7 +20,9 @@ export default async function Home() {
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <div className="flex justify-center">
           <Link href="/features/presentation">
-            <Button size="lg">Introducing cleanLoop</Button>
+            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white border-green-500 hover:border-green-600">
+              Introducing cleanLoop
+            </Button>
           </Link>
         </div>
         <h1
@@ -82,7 +84,7 @@ const features = [
     description: "See the waste and recycling in your neighborhood",
     demo: <div className="w-full h-full mx-[-15px] opacity-75 scale-90">
       <Link href="/features/yourArea" className="cursor-pointer transition-transform hover:scale-105">
-        <Map 
+      <Map 
           places={places} 
           interactive={false}
         />
@@ -102,8 +104,8 @@ const features = [
         <br />
         <div>
           <Link href="/features/partners">
-            <Button size="sm">
-              <Heart className="mr-2 h-4 w-4" /> See our partners
+            <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white border-green-500 hover:border-green-600">
+              <Heart className="mr-2 h-4 w-4" /> See our Bootcamps
             </Button>
           </Link>
         </div>
@@ -115,7 +117,10 @@ const features = [
   {
     title: "Report a trash",
     description: "Make your neighborhood clean again",
-    demo: <Button variant="red" size="lg">
+    demo: <Button 
+      variant="red" 
+      size="lg"
+    >
       <Send className="mr-2 h-4 w-4" /> Send your report
     </Button>,
     imagePosition: "left",
@@ -125,7 +130,10 @@ const features = [
   {
     title: "Report a cleaning",
     description: "Show others your work",
-    demo: <Button variant="outline" size="lg">
+    demo:  <Button 
+      className="bg-green-500 hover:bg-green-600 text-white border-green-500 hover:border-green-600" 
+      size="lg"
+    >
       <Send className="mr-2 h-4 w-4" /> Send your report
     </Button>,
     imagePosition: "right",
