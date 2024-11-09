@@ -20,7 +20,7 @@ export default async function Home() {
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <div className="flex justify-center">
           <Link href="/features/presentation">
-            <Button size="lg">See the presentation</Button>
+            <Button size="lg">Introducing cleanLoop</Button>
           </Link>
         </div>
         <h1
@@ -81,10 +81,12 @@ const features = [
     title: "Visualize",
     description: "See the waste and recycling in your neighborhood",
     demo: <div className="w-full h-full mx-[-15px] opacity-75 scale-90">
-      <Map 
-        places={places} 
-        interactive={false}
-      />
+      <Link href="/features/yourArea" className="cursor-pointer transition-transform hover:scale-105">
+        <Map 
+          places={places} 
+          interactive={false}
+        />
+      </Link> 
     </div>,
     large: true,
     small: false,
@@ -99,9 +101,9 @@ const features = [
         <WebVitals />
         <br />
         <div>
-          <Link href="/features/bootcamps">
+          <Link href="/features/partners">
             <Button size="sm">
-              <Heart className="mr-2 h-4 w-4" /> Visit Bootcamps
+              <Heart className="mr-2 h-4 w-4" /> See our partners
             </Button>
           </Link>
         </div>

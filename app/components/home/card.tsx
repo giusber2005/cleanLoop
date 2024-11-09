@@ -25,7 +25,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`relative col-span-1 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 ${
+      className={`relative scale-95 col-span-1 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 ${
         large ? "md:col-span-2" : ""
       } ${small ? "h-72" : "h-96"} ${className}`}
     >

@@ -33,7 +33,7 @@ export default function NavBar() {
           {/* New navigation buttons */}
           <div className="hidden space-x-4 sm:flex">
             <NavButton href="/features/yourArea">Your area</NavButton>
-            <NavButton href="/features/bootcamps">Bootcamps</NavButton>
+            <NavButton href="/features/partners">Partners</NavButton>
           </div>
 
           <div className="flex items-center space-x-4">

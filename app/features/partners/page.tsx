@@ -4,14 +4,14 @@ import { Button } from '../../components/home/modernButton'
 import { Heart, Send, Trash2, Settings, Mail, Plus, Download } from 'lucide-react'
 import Card from '../../components/home/card'
 
-export default function BootcampsPage() {
+export default function partnersPage() {
   return (
     <div className="container mx-auto p-8">
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          Bootcamps page
+          Partners page
         </h1>
 
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-6 xl:px-0">
@@ -46,7 +46,7 @@ const features = [
     },
     {
       title: "Centrum rewards vouchers",
-      description: "Make this area greener and gain rewards, see possibilities in the Bootcamps area",
+      description: "Make this area greener and gain rewards, see possibilities in the Centrum area",
       demo: <Button variant="secondary">
         <Download className="mr-2 h-4 w-4" /> Create a team
       </Button>,
