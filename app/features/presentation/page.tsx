@@ -9,7 +9,6 @@ export default function Presentation() {
     useEffect(() => {
         const timer = setTimeout(() => {
             pdfRef.current?.scrollIntoView({ behavior: 'smooth' });
-            pdfRef.current?.focus();
         }, 1000);
 
         return () => clearTimeout(timer);
