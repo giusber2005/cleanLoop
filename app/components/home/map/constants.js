@@ -4,14 +4,18 @@ export const mapContainerStyle = {
   }
   
   export const center = {
-    lat: 40.7128,
-    lng: -74.0060
+    lat: 46.4949,
+    lng: 11.3403
   }
   
   export const places = [
-    { id: 1, name: 'Central Park', lat: 40.7829, lng: -73.9654 },
-    { id: 2, name: 'Statue of Liberty', lat: 40.6892, lng: -74.0445 },
-    { id: 3, name: 'Empire State Building', lat: 40.7484, lng: -73.9857 }
+    { id: 1, name: 'Trash 1', lat: 46.495781, lng: 11.339545},
+    { id: 2, name: 'Trash 2', lat: 46.495210, lng: 11.339497},
+    { id: 3, name: 'Trash 3', lat: 46.494777, lng: 11.339250 },
+    { id: 3, name: 'Trash 3', lat: 46.494973, lng: 11.340648 },
+    { id: 3, name: 'Trash 3', lat: 46.494945, lng: 11.338990 },
+    { id: 3, name: 'Trash 3', lat: 46.495063, lng: 11.340258 },
+    { id: 3, name: 'Trash 3', lat: 46.496023, lng: 11.339487 }
   ]
   
   export const locationDescriptions = {

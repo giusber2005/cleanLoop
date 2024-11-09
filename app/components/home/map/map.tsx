@@ -9,7 +9,7 @@ export default function Map({ places, onPlaceSelect }: { places: any[], onPlaceS
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           center={center}
-          zoom={12}
+          zoom={17}
         >
           {places.map((place: any) => (
             <Marker
