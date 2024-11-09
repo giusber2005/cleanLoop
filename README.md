@@ -10,6 +10,7 @@
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#author"><strong>Authors</strong></a>
+  <a href="#dev"><strong>For developers</strong></a>
 </p>
 <br/>
 
@@ -26,4 +27,10 @@ You can simply start to see and play with our demo by going to this webpage: htt
 - Giuseppe Berardi ([@giusber2005](https://github.com/giusber2005))
 - Tara Fardmanesh ([@tarafard](https://github.com/tarafard))
 - Pouya Sattari ([@pouyasattari](https://github.com/pouyasattari))
+
+## For developers
+
+you can also try yourselfe the ai model for the trash detection, to do so 
+you can simply go to this repository, https://github.com/pouyasattari/trash-detection-cleanloop, and fork it locally
+
 
