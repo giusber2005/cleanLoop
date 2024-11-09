@@ -152,7 +152,7 @@ const features = [
       {
         title: "Recycling 3",
         description: "06/11/2024",
-        demo: (
+         demo: (
           <div className="relative w-full h-full">
             <Image
               src="/cleaning3.png"  // Add your image path here
