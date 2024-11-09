@@ -26,10 +26,9 @@ const [selectedPlace, setSelectedPlace] = useState(null)
         </p>
 
       <div className="flex flex-col md:flex-row gap-4 h-[calc(100vh-120px)] mb-20">
-        <div className="w-full md:w-1/2 h-full">
+        <div className="w-full md:w-1/2 h-full scale-90">
           <Map 
             places={places} 
-            onPlaceSelect={setSelectedPlace} 
           />
         </div>
         <div className="w-full md:w-1/2 h-full">

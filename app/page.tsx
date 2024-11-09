@@ -9,6 +9,8 @@ import MapPage from './features/yourArea/page'
 import Link from 'next/link';
 import { Button } from '@/app/components/home/modernButton'
 import { Heart, Send } from 'lucide-react'
+import { places } from "./components/home/map/constants";
+import Map from "@/app/components/home/map/map";
 
 export default async function Home() {
   const stars = 0;
@@ -78,8 +80,12 @@ const features = [
   {
     title: "Visualize",
     description: "See the waste and recycling in your neighborhood",
-    demo: <div>
-      </div>,
+    demo: <div className="w-full h-full mx-[-15px] opacity-75 scale-90">
+      <Map 
+        places={places} 
+        interactive={false}
+      />
+    </div>,
     large: true,
     small: false,
     imagePosition: "left",
