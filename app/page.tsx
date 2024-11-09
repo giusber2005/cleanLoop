@@ -5,6 +5,10 @@ import WebVitals from "@/app/components/home/web-vitals";
 import ComponentGrid from "@/app/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/app/utils/lib/utils";
+import MapPage from './features/yourArea/page'
+import Link from 'next/link';
+import { Button } from '@/app/components/home/modernButton'
+import { Heart, Send } from 'lucide-react'
 
 export default async function Home() {
   const stars = 0;
@@ -12,17 +16,11 @@ export default async function Home() {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <a
-          href="https://twitter.com/steventey/status/1613928948915920896"
-          target="_blank"
-          rel="noreferrer"
-          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
-        >
-          <Twitter  className="h-5 w-5 text-[#1d9bf0]" />
-          <p className="text-sm font-semibold text-[#1d9bf0]">
-            Introducing cleanLoop
-          </p>
-        </a>
+        <div className="flex justify-center">
+          <Link href="/features/presentation">
+            <Button size="lg">See the presentation</Button>
+          </Link>
+        </div>
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -54,13 +52,14 @@ export default async function Home() {
         </div>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-6 xl:px-0">
-        {features.map(({ title, description, demo, large, imagePosition, imageSrc }, index) => (
+        {features.map(({ title, description, demo, large, small, imagePosition, imageSrc }, index) => (
           <Card
             key={title}
             title={title}
             description={description}
             demo={demo}
             large={large}
+            small={small}
             imagePosition={imagePosition}
             className={`${
               index >= features.length - 2 
@@ -79,30 +78,50 @@ const features = [
   {
     title: "Visualize",
     description: "See the waste and recycling in your neighborhood",
-    demo: <div>Demo 0</div>,
+    demo: <div>
+      </div>,
     large: true,
+    small: false,
     imagePosition: "left",
     imageSrc: "/cleaner1.png",
   },
   {
-    title: "Performance first",
-    description:
-      "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
-    demo: <WebVitals />,
-    imagePosition: "right",
+    title: "Double rewards!",
+    description: "Make your city greener and gain benefits, see possibilities in the Bootcamps area",
+    demo: (
+      <div className="flex flex-col space-y-2">
+        <WebVitals />
+        <br />
+        <div>
+          <Link href="/features/bootcamps">
+            <Button size="sm">
+              <Heart className="mr-2 h-4 w-4" /> Visit Bootcamps
+            </Button>
+          </Link>
+        </div>
+      </div>
+    ),
+    small: false,
+    imagePosition: "right", 
   },
   {
     title: "Report a trash",
     description: "Make your neighborhood clean again",
-    demo: <div>Demo 1</div>,
+    demo: <Button variant="red" size="lg">
+      <Send className="mr-2 h-4 w-4" /> Send your report
+    </Button>,
     imagePosition: "left",
+    small: false,
     imageSrc: "/cleaner2.png",
   },
   {
     title: "Report a cleaning",
     description: "Show others your work",
-    demo: <div>Demo 2</div>,
+    demo: <Button variant="outline" size="lg">
+      <Send className="mr-2 h-4 w-4" /> Send your report
+    </Button>,
     imagePosition: "right",
+    small: false,
     imageSrc: "/cleaner3.png",
   },  
 ];

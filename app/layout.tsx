@@ -8,10 +8,10 @@ import Navbar from "@/app/components/layout/navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
+  title: "CleanLoop",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-  metadataBase: new URL("https://precedent.dev"),
+    "CleanLoop is a platform that allows you to create and manage teams for cleaning activities, and earn rewards for doing so.",
+  metadataBase: new URL("https://www.cleanloop.live"),
 };
 
 export default async function RootLayout({
