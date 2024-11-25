@@ -1,7 +1,6 @@
-<a href="https://precedent.dev">
-  <img alt="Team project logo" src="app/public/logoXL.png" />
-  <h1 align="center">cleanLoop</h1>
-</a>
+
+<img alt="Team project logo" src="public/logoXL.png" />
+<h1 align="center">cleanLoop</h1>
 
 <p align="center">
   Be part of the solution, not the pollution
