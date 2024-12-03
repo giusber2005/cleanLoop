@@ -37,14 +37,8 @@ export interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, isLoading, children, ...props }, ref) => {
-    var showForm = () => {
-      //TODO
-      console.log("a form will be shown");
-    }
-
     return (
       <button
-        onClick={ showForm }
         className={cn(
           buttonVariants({ variant, size, className }),
           "shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1",
