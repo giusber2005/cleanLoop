@@ -21,7 +21,7 @@ export default function Map({ places, interactive = true }: MapProps) {
 
   return (
     <div className="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl h-full">
-      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}>
+      <LoadScript googleMapsApiKey={process.env.YOUR_GOOGLE_MAPS_API_KEY!}>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           center={center}
