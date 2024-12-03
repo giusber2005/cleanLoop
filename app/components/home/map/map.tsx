@@ -19,6 +19,8 @@ export default function Map({ places, interactive = true }: MapProps) {
     streetViewControl: false,
   }
 
+  console.log("everything is working just fine")
+  
   return (
     <div className="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl h-full">
       <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_YOUR_GOOGLE_MAPS_API_KEY!}>
