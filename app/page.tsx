@@ -1,19 +1,20 @@
 import Card from "@/app/components/home/card";
-import { DEPLOY_URL } from "@/app/utils/lib/constants";
 import { Github, Twitter } from "@/app/components/shared/icons";
 import WebVitals from "@/app/components/home/web-vitals";
-import ComponentGrid from "@/app/components/home/component-grid";
-import Image from "next/image";
 import { nFormatter } from "@/app/utils/lib/utils";
-import MapPage from './features/yourArea/page'
 import Link from 'next/link';
 import { Button } from '@/app/components/home/modernButton'
 import { Heart, Send } from 'lucide-react'
 import { places } from "./components/home/map/constants";
 import Map from "@/app/components/home/map/map";
+import { useUser } from "@clerk/nextjs"
 
 export default async function Home() {
   const stars = 0;
+  const { user, isLoaded, isSignedIn } = useUser();
+
+  //TODO if (!isLoaded) return <div>Loading...</div>; // Wait for the user data to load
+  //TODO if (!isSignedIn) return <div>Please sign in.</div>; // User is not signed in
 
   return (
     <>
@@ -35,7 +36,7 @@ export default async function Home() {
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          Play, pick up, win!
+          Hi, { user ? user.username : 'NO USER' } Play, pick up, win!
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
