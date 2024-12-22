@@ -37,7 +37,7 @@ const features = [
       title: "Paulaner Stuben Pizza voucher",
       description: "Get a voucher for a discount pizza at Paulaner Stuben, go to clean the streets of this area",
       demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
+        <Plus className="mr-2 h-4 w-4" /> See more...
       </Button>,
       imagePosition: "left",
       large: true,
@@ -48,7 +48,7 @@ const features = [
       title: "Centrum rewards vouchers",
       description: "Make this area greener and gain rewards, see possibilities in the Centrum area",
       demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
+        <Plus className="mr-2 h-4 w-4" /> See more...
       </Button>,
       large: true,
       small: false,
@@ -59,7 +59,7 @@ const features = [
       title: "Oberalp free trial",
       description: "Get a free trial of Oberalp, the best climbing gym in Bolzano, go and clean with your friends",
         demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
+        <Plus className="mr-2 h-4 w-4" /> See more...
       </Button>,
       imagePosition: "left",
       large: true,
@@ -70,7 +70,7 @@ const features = [
       title: "Sportler Card",
       description: "Clean the center, get a Sportler Card for sales in their shops",
       demo: <Button variant="secondary">
-        <Download className="mr-2 h-4 w-4" /> Create a team
+        <Plus className="mr-2 h-4 w-4" /> See more...
       </Button>,
       imagePosition: "right",
       large: true,
@@ -81,7 +81,7 @@ const features = [
         title: "Panificio Lemayr",
         description: "Make this area greener and get a discount of 10% on your next purchase at Panificio Lemayr",
         demo: <Button variant="secondary">
-          <Download className="mr-2 h-4 w-4" /> Create a team
+          <Plus className="mr-2 h-4 w-4" /> See more...
         </Button>,
         imagePosition: "left",
         large: true,
@@ -92,14 +92,12 @@ const features = [
         title: "Decathlon",
         description: "Clean the center, get a discount of 20% on your next purchase at Decathlon",
         demo: <Button variant="secondary">
-          <Download className="mr-2 h-4 w-4" /> Create a team
+          <Plus className="mr-2 h-4 w-4" /> See more...
         </Button>,
         imagePosition: "right",
         large: true,
         small: false,
         imageSrc: "/decathlon.png",
       },  
-
-
   ];
   

@@ -1,11 +1,7 @@
 import Card from "@/app/components/home/card";
-import { DEPLOY_URL } from "@/app/utils/lib/constants";
 import { Github, Twitter } from "@/app/components/shared/icons";
 import WebVitals from "@/app/components/home/web-vitals";
-import ComponentGrid from "@/app/components/home/component-grid";
-import Image from "next/image";
 import { nFormatter } from "@/app/utils/lib/utils";
-import MapPage from './features/yourArea/page'
 import Link from 'next/link';
 import { Button } from '@/app/components/home/modernButton'
 import { Heart, Send } from 'lucide-react'
@@ -97,7 +93,7 @@ const features = [
   },
   {
     title: "Double rewards!",
-    description: "Make your city greener and gain benefits, see possibilities in the Bootcamps area",
+    description: "Make your city greener and gain benefits, see possibilities in the Partners area",
     demo: (
       <div className="flex flex-col space-y-2">
         <WebVitals />
@@ -105,7 +101,7 @@ const features = [
         <div>
           <Link href="/features/partners">
             <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white border-green-500 hover:border-green-600">
-              <Heart className="mr-2 h-4 w-4" /> See our Bootcamps
+              <Heart className="mr-2 h-4 w-4" /> See our Partners 
             </Button>
           </Link>
         </div>
