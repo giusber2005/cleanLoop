@@ -1,12 +1,12 @@
 import Card from "@/app/components/home/card";
 import { Github, Twitter } from "@/app/components/shared/icons";
 import WebVitals from "@/app/components/home/web-vitals";
-import { nFormatter } from "@/app/utils/lib/utils";
 import Link from 'next/link';
 import { Button } from '@/app/components/home/modernButton'
 import { Heart, Send } from 'lucide-react'
 import { places } from "./components/home/map/constants";
 import Map from "@/app/components/home/map/map";
+import GitHubStars from "@/app/components/home/GitHubStars";
 
 export default async function Home() {
   const stars = 0;
@@ -39,15 +39,12 @@ export default async function Home() {
         >
           <a
             className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-            href="https://github.com/giusber2005/project-name"
+            href="https://github.com/giusber2005/cleanloop"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Github />
-            <p>
-              <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
-              <span className="font-semibold">{nFormatter(stars)}</span>
-            </p>
+            <GitHubStars owner="giusber2005" repo="cleanloop" />
           </a>
         </div>
       </div>
