@@ -1,5 +1,0 @@
-
-(A) Connecting the database to the project
-(B) Handle clicking on buttons
-(C) Display a different homepage if the user hasn't logged in
-(D) Hi { username }!, play, pick up, win!
